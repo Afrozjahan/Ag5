@@ -1,0 +1,22 @@
+ng new soc-gen-app
+ng serve
+
+-- Platform Browser Dynamic to load the app module
+-- Decorators @NgModule, @Component, @Injectable, @Directive, @Pipe
+-- NgModule
+	-- declarations (components, pipes, directives)
+	-- imports (modules)
+	-- providers (services)
+	-- bootstrap (root components of the application)
+
+-- generate new components, modules, services, pipes, directives
+	ng g c <component name>
+	ng g s <service name>
+	ng g d <directive name>
+	ng g m <module name>
+	ng g p <pipe name>
+
+-- Data bindings
+	-- Property binding
+	-- Event binding
+
