@@ -19,4 +19,16 @@ ng serve
 -- Data bindings
 	-- Property binding
 	-- Event binding
+	-- two way data binding with interpolation / forms module
 
+-- Data from Parent to Child
+	-- Data Projection
+		-- <ng-content> with html element selector
+		-- <ng-content> with select (node name/css class) 
+	-- @Input() + Property binding
+	-- Using Services
+	-- Using Objects
+
+-- Component Types
+	-- Smart Component
+	-- Dump Component

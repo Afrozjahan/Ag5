@@ -1,12 +1,15 @@
+<ng-content select="header"></ng-content>
+<br>
 <div class="container">
     <ul class="list-unstyled">
         <li class="well">
             <div class="row">
                 <div class="col-md-2">
                     <img [src]="user.image" alt="" class="img-responsive img-circle" />
+
                     <button class="btn btn-info btn-sm" (click)="moreInfo(user)">More Info</button>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <h1>{{user.firstName}} {{user.lastName}}</h1>
                     <p>Income: {{user.income}}</p>
                     <!--  Using interpolation-->
@@ -27,3 +30,5 @@
         </li>
     </ul>
 </div>
+
+<ng-content select="footer"></ng-content>
