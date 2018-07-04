@@ -1,0 +1,29 @@
+<div class="container">
+    <ul class="list-unstyled">
+        <li class="well">
+            <div class="row">
+                <div class="col-md-2">
+                    <img [src]="user.image" alt="" class="img-responsive img-circle" />
+                    <button class="btn btn-info btn-sm" (click)="moreInfo(user)">More Info</button>
+                </div>
+                <div class="col-md-8">
+                    <h1>{{user.firstName}} {{user.lastName}}</h1>
+                    <p>Income: {{user.income}}</p>
+                    <!--  Using interpolation-->
+                    <p>Date of Birth: {{user.dob}}</p>
+
+                    <!-- Property Binding -->
+                    <p>Date of Birth :
+                        <span [innerHtml]="user.dob"></span>
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <em> Total Votes: {{user.vote}}
+                        <!-- <input type="number" class="row" [value]="user.vote" (change)="user.vote=$event.target.value" /> -->
+                        <input type="number" class="row" [(ngModel)]="user.vote" />
+                    </em>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
