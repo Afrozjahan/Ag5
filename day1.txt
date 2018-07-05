@@ -73,4 +73,7 @@ https://github.com/synergy2411/sg3-demo/blob/master/ngcourse2.pdf
 		-- keeps validation logic inside template
 		-- refers to Form object
 	-- Model Driven Forms
-	
+		-- Form is created programmatically and syns with DOM
+		-- Business logic lies in component
+		-- FormControl, FormGroup, FormBuilder
+			-- FormBuilder builds/groups the FormControl to FormGroup 
