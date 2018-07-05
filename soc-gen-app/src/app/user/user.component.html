@@ -3,7 +3,7 @@
 <h1 class="text-center">Title from parent : {{title}}</h1>
 <div class="container">
     <ul class="list-unstyled">
-        <li class="well">
+        <li class="well" *ngFor="let user of users; index as i;first as isFirst; last as isLast; even as isEven; odd as isOdd">
             <div class="row">
                 <div class="col-md-2">
                     <img [src]="user.image" alt="" class="img-responsive img-circle" />
@@ -11,8 +11,11 @@
                     <button class="btn btn-info btn-sm" (click)="moreInfo(user)">More Info</button>
                 </div>
                 <div class="col-md-7">
-                    <h1>{{user.firstName}} {{user.lastName}}</h1>
-                    <p>Income: {{user.income}}</p>
+                    <h1>{{i}} {{user.firstName}} {{user.lastName}}</h1>
+                    <p *ngIf="user.isWorking; else elseTemplate">Income: {{user.income}}</p>
+                    <ng-template #elseTemplate>
+                        <p> {{user.firstName}} is not working now</p>
+                    </ng-template>
                     <!--  Using interpolation-->
                     <p>Date of Birth: {{user.dob}}</p>
 
@@ -24,7 +27,6 @@
                 </div>
                 <div class="col-md-2">
                     <em> Total Votes: {{user.vote}}
-                        <!-- <input type="number" class="row" [value]="user.vote" (change)="user.vote=$event.target.value" /> -->
                         <input type="number" class="row" [(ngModel)]="user.vote" />
                     </em>
                 </div>

@@ -32,3 +32,21 @@ ng serve
 -- Component Types
 	-- Smart Component
 	-- Dump Component
+
+
+-- Course Practices
+https://www.intertech.com/training/web-dev/angular/angular-5/advanced-angular-5-programming
+https://medium.mybridge.co/angular-top-10-articles-for-the-past-month-v-nov-2017-7447fd2f03ea
+
+-- Directives
+	-- Component Directive
+		-- will have template 
+		-- styles (optional)
+		-- business logic attached (optional)
+	-- Attribute Directive
+		-- ngClass
+		-- ngStyle
+	-- Structural Directive
+		-- ngFor
+		-- ngIf
+		-- ngSwitch
