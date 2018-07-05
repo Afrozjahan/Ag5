@@ -8,6 +8,9 @@ import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 import { HighlightDirective } from './directive/highlight.directive';
 import { UnlessDirective } from './directive/unless.directive';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { CountrycodePipe } from './pipes/countrycode.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { UnlessDirective } from './directive/unless.directive';
     UserComponent,
     ProductComponent,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    PipeDemoComponent,
+    CountrycodePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

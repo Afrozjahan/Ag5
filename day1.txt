@@ -56,3 +56,10 @@ https://medium.mybridge.co/angular-top-10-articles-for-the-past-month-v-nov-2017
 	-- Initializing input decorators from component(sending data from component to directive)
 		-- @HostListener decorator for the methods in the directive
 		-- @HostBinding decorator for binding the property directly on the target element
+
+-- Pipes
+	-- Stateless/Pure Pipe
+		-- Currency, Date, Uppercase, Lowercase, Number, JSON, Percent
+	-- Impure Pipe
+		-- Async
+-- Custom 

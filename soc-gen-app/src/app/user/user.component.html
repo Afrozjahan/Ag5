@@ -12,16 +12,16 @@
                 </div>
                 <div class="col-md-7">
                     <p *appUnless="user.isWorking">
-                        Income : {{user.income}}
+                        Income : {{user.income }}
                     </p>
-                    <h1 appHighlight [myColor]="myColor">{{user.firstName}} {{user.lastName}}</h1>
-                    <p *ngIf="user.isWorking; else elseTemplate">Income: {{user.income}}</p>
+                    <h1 appHighlight [myColor]="myColor">{{user.firstName | uppercase}} {{user.lastName}}</h1>
+                    <p *ngIf="user.isWorking; else elseTemplate">Income: {{user.income| currency: 'EUR'}}</p>
                     <ng-template #elseTemplate>
                         <p> {{user.firstName}} is not working now</p>
                     </ng-template>
                     <!--  Using interpolation-->
                     <!-- <p [ngClass]="{'myBorder': isEven,'decoration': isOdd}">Date of Birth: {{user.dob}}</p> -->
-                    <p [ngClass]="myBorderStyle">Date of Birth: {{user.dob}}</p>
+                    <p [ngClass]="myBorderStyle">Date of Birth: {{user.dob | date: 'dd/MMM/yyyy'}}</p>
                     <!-- Property Binding -->
                     <p>Date of Birth :
                         <span [innerHtml]="user.dob"></span>
