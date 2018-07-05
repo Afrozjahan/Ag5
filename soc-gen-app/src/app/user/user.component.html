@@ -11,6 +11,9 @@
                     <button class="btn btn-info btn-sm" (click)="moreInfo(user)">More Info</button>
                 </div>
                 <div class="col-md-7">
+                    <p *appUnless="user.isWorking">
+                        Income : {{user.income}}
+                    </p>
                     <h1 appHighlight [myColor]="myColor">{{user.firstName}} {{user.lastName}}</h1>
                     <p *ngIf="user.isWorking; else elseTemplate">Income: {{user.income}}</p>
                     <ng-template #elseTemplate>

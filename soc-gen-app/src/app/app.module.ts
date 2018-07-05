@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
 import { HighlightDirective } from './directive/highlight.directive';
+import { UnlessDirective } from './directive/unless.directive';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HighlightDirective } from './directive/highlight.directive';
     AppComponent,
     UserComponent,
     ProductComponent,
-    HighlightDirective
+    HighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
