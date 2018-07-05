@@ -3,7 +3,8 @@
   <h1 class="text-center">
     Welcome to {{ title }}!
   </h1>
-  <app-user>
+  <input type="text" [(ngModel)]="title" />
+  <app-user [user]="user" [title]="title">
     <header class="text-center">{{headerInfo}}</header>
     <footer class="text-center">Some footer Here</footer>
   </app-user>

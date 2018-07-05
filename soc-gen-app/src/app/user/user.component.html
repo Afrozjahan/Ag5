@@ -1,5 +1,6 @@
 <ng-content select="header"></ng-content>
 <br>
+<h1 class="text-center">Title from parent : {{title}}</h1>
 <div class="container">
     <ul class="list-unstyled">
         <li class="well">
@@ -19,6 +20,7 @@
                     <p>Date of Birth :
                         <span [innerHtml]="user.dob"></span>
                     </p>
+                    <input type="text" [(ngModel)]="title" />
                 </div>
                 <div class="col-md-2">
                     <em> Total Votes: {{user.vote}}
