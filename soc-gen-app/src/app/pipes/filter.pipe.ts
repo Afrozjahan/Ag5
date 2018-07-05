@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter',
+  name: 'filter'
   // pure: false - Use to apply digest cycles on every change applies by filter
 })
 export class FilterPipe implements PipeTransform {

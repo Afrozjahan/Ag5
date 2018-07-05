@@ -37,6 +37,7 @@ ng serve
 -- Course Practices
 https://www.intertech.com/training/web-dev/angular/angular-5/advanced-angular-5-programming
 https://medium.mybridge.co/angular-top-10-articles-for-the-past-month-v-nov-2017-7447fd2f03ea
+https://github.com/synergy2411/sg3-demo/blob/master/ngcourse2.pdf
 
 -- Directives
 	-- Component Directive
@@ -62,4 +63,9 @@ https://medium.mybridge.co/angular-top-10-articles-for-the-past-month-v-nov-2017
 		-- Currency, Date, Uppercase, Lowercase, Number, JSON, Percent
 	-- Impure Pipe
 		-- Async
--- Custom 
+-- Custom Pipe
+-- Pure pipes do not trigger digest cycle for any change in the model object
+	-- can be made as impure pipe by setting (pure = false) in the pipe
+-- Impure pipes trigger digest cycle for change in model object
+	
+	
