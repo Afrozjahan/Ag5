@@ -68,4 +68,9 @@ https://github.com/synergy2411/sg3-demo/blob/master/ngcourse2.pdf
 	-- can be made as impure pipe by setting (pure = false) in the pipe
 -- Impure pipes trigger digest cycle for change in model object
 	
+-- Forms 
+	-- Template Driven Forms (represented by ngForm keyword)
+		-- keeps validation logic inside template
+		-- refers to Form object
+	-- Model Driven Forms
 	

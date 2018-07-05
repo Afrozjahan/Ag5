@@ -11,6 +11,8 @@ import { UnlessDirective } from './directive/unless.directive';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { CountrycodePipe } from './pipes/countrycode.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { FilterPipe } from './pipes/filter.pipe';
     UnlessDirective,
     PipeDemoComponent,
     CountrycodePipe,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
