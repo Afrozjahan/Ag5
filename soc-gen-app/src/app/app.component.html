@@ -1,9 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <h1 class="text-center">
+  <h3 class="text-center">
     Welcome to {{ title }}!
-  </h1>
-  <input type="text" [(ngModel)]="title" />
+    <input type="text" [(ngModel)]="title" />
+  </h3>
+
   <app-user [user]="users" [title]="title">
     <header class="text-center">{{headerInfo}}</header>
     <footer class="text-center">Some footer Here</footer>

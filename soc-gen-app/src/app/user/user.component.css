@@ -1,3 +1,10 @@
 h2{
     color: orange;    
 }
+
+.myBorder{
+    border-bottom : red 2px solid;
+}
+.decoration{
+    text-decoration: underline;
+}

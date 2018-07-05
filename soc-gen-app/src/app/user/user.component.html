@@ -11,19 +11,24 @@
                     <button class="btn btn-info btn-sm" (click)="moreInfo(user)">More Info</button>
                 </div>
                 <div class="col-md-7">
-                    <h1>{{i}} {{user.firstName}} {{user.lastName}}</h1>
+                    <h1 appHighlight [myColor]="myColor">{{user.firstName}} {{user.lastName}}</h1>
                     <p *ngIf="user.isWorking; else elseTemplate">Income: {{user.income}}</p>
                     <ng-template #elseTemplate>
                         <p> {{user.firstName}} is not working now</p>
                     </ng-template>
                     <!--  Using interpolation-->
-                    <p>Date of Birth: {{user.dob}}</p>
-
+                    <!-- <p [ngClass]="{'myBorder': isEven,'decoration': isOdd}">Date of Birth: {{user.dob}}</p> -->
+                    <p [ngClass]="myBorderStyle">Date of Birth: {{user.dob}}</p>
                     <!-- Property Binding -->
                     <p>Date of Birth :
                         <span [innerHtml]="user.dob"></span>
                     </p>
                     <input type="text" [(ngModel)]="title" />
+                    <!-- <p [ngSwitch]="title">
+                            <span *ngSwitchCase="'app'">title unchanged </span>
+                            <span *ngSwitchCase="'ap'">title changed </span>
+                            <span *ngSwitchDefault>nothing changed </span>
+                        </p> -->
                 </div>
                 <div class="col-md-2">
                     <em> Total Votes: {{user.vote}}

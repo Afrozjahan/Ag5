@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IUser } from '../model/user';
 import { USER_DATA } from './data/mock';
+import { IUser } from './model/user';
 
 @Component({
   selector: 'app-root',

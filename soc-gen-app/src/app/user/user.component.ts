@@ -2,7 +2,8 @@ import {
     Component, Input, OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked,
     AfterViewInit, AfterViewChecked, OnDestroy, SimpleChanges
 } from '@angular/core';
-import { IUser } from '../../model/user';
+import { IUser } from '../model/user';
+
 
 @Component({
     selector: 'app-user',
@@ -18,10 +19,16 @@ export class UserComponent implements OnChanges, OnInit, DoCheck, AfterContentIn
     AfterViewInit, AfterViewChecked, OnDestroy {
     @Input('user') users: IUser[];
     @Input('title') title: any;
+    myColor: string = "khaki";
+    myBorderStyle = {
+        myBorder: true, decoration: false
+    }
     constructor() {
         console.log("constructor");
     }
     moreInfo(user: any) {
+        this.myBorderStyle.myBorder = !this.myBorderStyle.myBorder;
+        this.myBorderStyle.decoration = !this.myBorderStyle.decoration;
     }
     ngOnChanges(changes: SimpleChanges) {
         console.log("ngOnChanges");

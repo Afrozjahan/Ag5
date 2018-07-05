@@ -6,13 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
+import { HighlightDirective } from './directive/highlight.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    ProductComponent
+    ProductComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

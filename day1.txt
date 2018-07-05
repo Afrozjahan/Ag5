@@ -50,3 +50,8 @@ https://medium.mybridge.co/angular-top-10-articles-for-the-past-month-v-nov-2017
 		-- ngFor
 		-- ngIf
 		-- ngSwitch
+
+-- Custom Directives
+	-- ElementRef class for referencing the target element of the directive
+	-- Initializing input decorators from component(sending data from component to directive)
+		-- @HostListener decorator for the methods in the directive
