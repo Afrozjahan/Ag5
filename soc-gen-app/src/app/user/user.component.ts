@@ -3,6 +3,7 @@ import {
     AfterViewInit, AfterViewChecked, OnDestroy, SimpleChanges
 } from '@angular/core';
 import { IUser } from '../model/user';
+import { UserService } from '../services/user.service';
 
 
 @Component({
@@ -12,7 +13,8 @@ import { IUser } from '../model/user';
     // styles: [`
     // h2{
     //     color: orange
-    // }`]
+    // }`],
+    providers: [UserService],
     styleUrls: [`./user.component.css`]
 })
 export class UserComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked,
@@ -23,8 +25,7 @@ export class UserComponent implements OnChanges, OnInit, DoCheck, AfterContentIn
     myBorderStyle = {
         myBorder: true, decoration: false
     }
-    constructor() {
-        console.log("constructor");
+    constructor(private userService: UserService) {
     }
     moreInfo(user: any) {
         this.myBorderStyle.myBorder = !this.myBorderStyle.myBorder;

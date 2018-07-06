@@ -77,3 +77,10 @@ https://github.com/synergy2411/sg3-demo/blob/master/ngcourse2.pdf
 		-- Business logic lies in component
 		-- FormControl, FormGroup, FormBuilder
 			-- FormBuilder builds/groups the FormControl to FormGroup 
+
+
+-- Services
+	-- Services are singleton
+	-- Have heirarchical injection
+	-- Injecting in root module will have single instance throught the application
+	-- Injecting inside a specific component will restrict the scope of the service to that component
