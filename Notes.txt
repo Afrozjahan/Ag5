@@ -91,3 +91,4 @@ https://github.com/synergy2411/sg3-demo/blob/master/ngcourse2.pdf
 -- HttpClient Module
 -- rxjs Reactive 
 	http://reactivex.io
+	https://angular.io/resources

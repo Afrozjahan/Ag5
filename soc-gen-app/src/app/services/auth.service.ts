@@ -24,7 +24,7 @@ export class AuthService {
       .then(token => {
         this.token = token;
       })
-      .catch(err => console.log(err))
+      .catch(err => console.log(err));
     return this.token;
   }
   constructor() { }
