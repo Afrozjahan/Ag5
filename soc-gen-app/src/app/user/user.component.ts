@@ -34,11 +34,18 @@ export class UserComponent implements OnChanges, OnInit, DoCheck, AfterContentIn
     ngOnChanges(changes: SimpleChanges) {
         console.log("ngOnChanges");
     }
-    ngOnInit() { console.log("ngOnInit"); }
-    ngDoCheck() { console.log("ngDoCheck"); }
-    ngAfterContentInit() { console.log("ngAfterContentInit"); }
-    ngAfterContentChecked() { console.log("ngAfterContentChecked"); }
-    ngAfterViewInit() { console.log("ngAfterViewInit"); }
-    ngAfterViewChecked() { console.log("ngAfterViewChecked"); }
-    ngOnDestroy() { console.log("ngOnDestroy"); }
+    ngOnInit() { //console.log("ngOnInit"); 
+    }
+    ngDoCheck() { //console.log("ngDoCheck"); 
+    }
+    ngAfterContentInit() { //console.log("ngAfterContentInit"); 
+    }
+    ngAfterContentChecked() { //console.log("ngAfterContentChecked"); 
+    }
+    ngAfterViewInit() { //console.log("ngAfterViewInit"); 
+    }
+    ngAfterViewChecked() {// console.log("ngAfterViewChecked"); 
+    }
+    ngOnDestroy() { //console.log("ngOnDestroy"); 
+    }
 }

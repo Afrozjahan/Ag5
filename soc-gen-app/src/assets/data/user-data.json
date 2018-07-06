@@ -1,0 +1,34 @@
+{
+    "userdata": [
+        {
+            "firstName": "Bill",
+            "lastName": "Gates",
+            "dob": "Jan 22 1967",
+            "income": 50000,
+            "company": "Microsoft",
+            "isWorking": true,
+            "image": "./assets/images/bill.jpg",
+            "vote": 120
+        },
+        {
+            "firstName": "Steve",
+            "lastName": "Jobs",
+            "dob": "Feb 12 1988",
+            "income": 0,
+            "company": "Apple",
+            "isWorking": false,
+            "image": "./assets/images/steve.jpg",
+            "vote": 180
+        },
+        {
+            "firstName": "Satya",
+            "lastName": "Nadella",
+            "dob": "Jun 20 1956",
+            "income": 50000,
+            "company": "Microsoft",
+            "isWorking": true,
+            "image": "./assets/images/satya.jpg",
+            "vote": 130
+        }
+    ]
+}

@@ -1,9 +1,10 @@
 <ng-content select="header"></ng-content>
 <br>
 <h1 class="text-center">Title from parent : {{title}}</h1>
-<div class="container">
-    <div>Counter in user compo : {{userService.counter}}</div>
+<div class="container">Counter in user compo : {{userService.counter}}
     <button type="button" class="btn btn-primary" (click)="userService.increase()">Increase</button>
+</div>
+<div class="container">
     <ul class="list-unstyled">
         <li class="well" *ngFor="let user of users; index as i;first as isFirst; last as isLast; even as isEven; odd as isOdd">
             <div class="row">

@@ -1,3 +1,5 @@
+git config --global user.email "email@example.com"
+
 ng new soc-gen-app
 ng serve
 
@@ -84,3 +86,5 @@ https://github.com/synergy2411/sg3-demo/blob/master/ngcourse2.pdf
 	-- Have heirarchical injection
 	-- Injecting in root module will have single instance throught the application
 	-- Injecting inside a specific component will restrict the scope of the service to that component
+
+-- Http Module
