@@ -25,7 +25,7 @@ export class AppComponent {
     })
     //this.users = USER_DATA;
     //this.users = this.userService.getUserData();
-    this.userService.getApiData()
-      .subscribe(data => this.users = data);
+    // this.userService.getApiData()
+    //   .subscribe(data => this.users = data);
   }
 }
