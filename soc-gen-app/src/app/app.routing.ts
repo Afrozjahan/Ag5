@@ -6,6 +6,7 @@ import { ProductComponent } from './product/product.component';
 import { OverviewComponent } from './product/overview/overview.component';
 import { SpecificationComponent } from './product/specification/specification.component';
 import { LoginGuardService } from './services/login-guard.service';
+import { EmployeeComponent } from './employee-module/employee/employee.component';
 
 
 export const APP_ROUTES: Routes = [
@@ -40,6 +41,14 @@ export const APP_ROUTES: Routes = [
                 component: SpecificationComponent
             }
         ]
+    },
+    {
+        path: "employee",
+        component: EmployeeComponent
+    },
+    {
+        path: "lazy",
+        loadChildren: 'app/lazy/lazy.module#LazyModule'
     },
     {
         path: "**",

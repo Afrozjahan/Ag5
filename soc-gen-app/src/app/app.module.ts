@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { ProductComponent } from './product/product.component';
@@ -24,6 +23,7 @@ import { APP_ROUTES } from './app.routing';
 import { OverviewComponent } from './product/overview/overview.component';
 import { SpecificationComponent } from './product/specification/specification.component';
 import { LoginGuardService } from './services/login-guard.service';
+import { EmployeeModule } from './employee-module/employee-module';
 
 
 @NgModule({
@@ -47,7 +47,8 @@ import { LoginGuardService } from './services/login-guard.service';
     ReactiveFormsModule,
     HttpModule,
     HttpClientModule,
-    RouterModule.forRoot(APP_ROUTES)
+    RouterModule.forRoot(APP_ROUTES),
+    EmployeeModule
   ],
   providers: [UserService, AuthService, LoginGuardService, {
     provide: HTTP_INTERCEPTORS,
