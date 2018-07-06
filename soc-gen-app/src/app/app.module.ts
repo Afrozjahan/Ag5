@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +20,10 @@ import { UserService } from './services/user.service';
 import { AuthService } from './services/auth.service';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
 import { LoggerInterceptorService } from './services/logger-interceptor.service';
+import { APP_ROUTES } from './app.routing';
+import { OverviewComponent } from './product/overview/overview.component';
+import { SpecificationComponent } from './product/specification/specification.component';
+import { LoginGuardService } from './services/login-guard.service';
 
 
 @NgModule({
@@ -32,16 +37,19 @@ import { LoggerInterceptorService } from './services/logger-interceptor.service'
     CountrycodePipe,
     FilterPipe,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    OverviewComponent,
+    SpecificationComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [UserService, AuthService, {
+  providers: [UserService, AuthService, LoginGuardService, {
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptorService,
     multi: true

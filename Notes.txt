@@ -92,3 +92,17 @@ https://github.com/synergy2411/sg3-demo/blob/master/ngcourse2.pdf
 -- rxjs Reactive 
 	http://reactivex.io
 	https://angular.io/resources
+
+-- Routing
+	-- Deep linking with Angular
+	-- Steps
+		-- checking base href tag in index file
+		-- configuring routes with components
+		-- Tell angular about routing app
+		-- Setting up the routing links
+		-- Provide the space in the template to load the component
+
+
+-- Modules - mechanism to group components, services, directives and pipes that are related
+	-- Root Module - one per application
+	-- Feature Module - multiple across application

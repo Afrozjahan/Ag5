@@ -1,24 +1,39 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <h3 class="text-center">
-    Welcome to {{ title }}!
-    <input type="text" [(ngModel)]="title" />
-  </h3>
+<!-- <div> -->
+<h3 class="text-center">
+  Welcome to {{ title }}!
+  <!-- <input type="text" [(ngModel)]="title" /> -->
+</h3>
 
-  <div class="container">
+<div class="container">
+  <ul class="list-unstyled nav nav-tabs">
+    <li>
+      <a [routerLink]="['login']">Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['register']">Register</a>
+    </li>
+    <li>
+      <a [routerLink]="['pipe']">Pipe</a>
+    </li>
+    <li>
+      <a [routerLink]="['product/5']">Product</a>
+    </li>
+  </ul>
+</div>
+
+<!-- <div class="container">
     <app-register></app-register>
   </div>
   <div class="container">
     <app-login></app-login>
-  </div>
+  </div> -->
 
-  <!-- <div class="container">
+<!-- <div class="container">
     <app-pipe-demo></app-pipe-demo>
   </div> -->
 
-
-
-  <div class="container">
+<!-- <div class="container">
     Counter in App: {{userService.counter}}
     <button class="btn btn-primary" (click)="userService.increase()">Increase</button>
   </div>
@@ -26,4 +41,8 @@
     <header class="text-center">{{headerInfo}}</header>
     <footer class="text-center">Some footer Here</footer>
   </app-user>
+</div> -->
+
+<div class="container">
+  <router-outlet></router-outlet>
 </div>
